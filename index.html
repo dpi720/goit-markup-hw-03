@@ -8,35 +8,43 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- шапка-->
     <header>
-      <nav>
-        <a href="./index.html" class="logo">
-          <span class="logo-blue">Web</span> Studio</a
-        >
-        <ul class="navigatoin">
-          <li><a href="./index.html" class="navigatoin-link">Студия</a></li>
-          <li>
-            <a href="./portfolio.html" class="navigatoin-link">Портфолио </a>
+      <div class="container mainmenu">
+        <nav class="topmenu" >
+          <a href="./index.html" class="logo">
+            <span class="logo-blue">Web</span> Studio</a
+          >
+          <ul class="navigatoin clermargin">
+            <li class="item">
+              <a href="./index.html" class="navigatoin-link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="navigatoin-link">Портфолио </a>
+            </li class="item">
+            <li><a href="#" class="navigatoin-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="clermargin connect">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contacts-link">
+              info@devstudio.com</a
+            >
           </li>
-          <li><a href="#" class="navigatoin-link">Контакты</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contacts-link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
-      </nav>
-      <ul class="contacts">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacts-link">
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contacts-link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- banner-->
     <section class="banner">
@@ -46,18 +54,18 @@
     </section>
     <main>
       <!-- особенности  -->
-      <section class="properties">
-        <h2>особенности</h2>
-        <ul>
-          <li>
-            <img src="./img/antenna1.svg" alt="антена" width="70" />
+      <section class="properties container downspace">
+        <!-- <h2 class="properties-title">особенности</h2> -->
+        <ul class="clermargin grup-block">
+          <li class="item">
+            <img src="./img/antenna1.svg"  alt="антена" width="70" />
             <h3 class="properties-link">Внимание к деталям</h3>
             <p class="properties-text">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/clock.svg" alt="часы" width="70" />
             <h3 class="properties-link">Пунктуальность</h3>
             <p class="properties-text">
@@ -65,7 +73,7 @@
               влечет за собой
             </p>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/diagram1.svg" alt="Диаграмма" width="70" />
             <h3 class="properties-link">Планирование</h3>
             <p class="properties-text">
@@ -73,10 +81,10 @@
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/astronaut1.svg" alt="Астронавт" width="70" />
             <h3 class="properties-link">Современные технологии</h3>
-            <p class="properties-text">
+            <p class="clermargin">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -84,36 +92,36 @@
         </ul>
       </section>
       <!-- Чем мы занимаемся -->
-      <section class="worck">
+      <section class="worck container downspace">
         <h2 class="topic">Чем мы занимаемся</h2>
-        <ul>
-          <li>
+        <ul class="clermargin grup-block">
+          <li class="item">
             <img src="./img/box1.jpg" alt=" ноутбук" width="380" />
-            <a href="#" class="worck-link">Десктопные приложения</a>
+            <a href="#" class="worck-link ">Десктопные приложения</a>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/box2.jpg" alt="телефон" width="380" />
-            <a href="#" class="worck-link">Мобильные приложения</a>
+            <a href="#" class="worck-link ">Мобильные приложения</a>
           </li>
-          <li>
+          <li class="item">
             <img src="./img/box3.jpg" alt="монитор" width="380" />
-            <a href="#" class="worck-link">Дизайнерские решения</a>
+            <a href="#" class="worck-link ">Дизайнерские решения</a>
           </li>
         </ul>
       </section>
       <!-- Наша команда -->
-      <section class="comand">
+      <section class="comand container downspace">
         <h2 class="topic">Наша команда</h2>
-        <ul>
-          <li>
+        <ul class="clermargin grup-block">
+          <li class="item">
             <img
               src="./img/johnsmith.jpg"
               alt="Фотография Джона Смита"
               width="278"
             />
-            <h3 class="comand-name">John Smith</h3>
-            <p class="comand-position">Product Designer</p>
-            <ul>
+            <h3 class="comand-name autocenter">John Smith</h3>
+            <p class="comand-position autocenter">Product Designer</p>
+            <ul class="command-link">
               <li>
                 <a href="#">
                   <img
@@ -145,15 +153,15 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./img/marta.jpg"
               alt="Фотография Марты Стюарт"
               width="278"
             />
-            <h3 class="comand-name">Marta Stewart</h3>
-            <p class="comand-position">Frontend Developer</p>
-            <ul>
+            <h3 class="comand-name autocenter">Marta Stewart</h3>
+            <p class="comand-position autocenter">Frontend Developer</p>
+            <ul class="command-link">
               <li>
                 <a href="#">
                   <img
@@ -185,15 +193,15 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./img/robertjakis.jpg"
               alt="Фотография Роберта Джекиса"
               width="278"
             />
-            <h3 class="comand-name">Robert Jakis</h3>
-            <p class="comand-position">Marketing</p>
-            <ul>
+            <h3 class="comand-name autocenter">Robert Jakis</h3>
+            <p class="comand-position autocenter">Marketing</p>
+            <ul class="command-link">
               <li>
                 <a href="#">
                   <img
@@ -225,15 +233,15 @@
               </li>
             </ul>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./img/martin.jpg"
               alt="Фотография Мартина Дое"
               width="278"
             />
-            <h3 class="comand-name">Martin Doe</h3>
-            <p class="comand-position">Frontend Developer</p>
-            <ul>
+            <h3 class="comand-name autocenter">Martin Doe</h3>
+            <p class="comand-position autocenter">Frontend Developer</p>
+            <ul class="command-link">
               <li>
                 <a href="#">
                   <img
@@ -268,38 +276,39 @@
         </ul>
       </section>
       <!-- Постоянные клиенты-->
-      <section class="clients">
+      <section class="clients container downspace">
         <h2 class="topic">Постоянные клиенты</h2>
-        <ul>
-          <li>
+        <ul class="clermargin grup-block">
+          <li class="item">
             <a href="#"><img src="./img/logo1.svg" alt="Клиент 1" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./img/logo2.svg" alt="Клиент 2" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./img/logo3.svg" alt="Клиент 3" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./img/logo4.svg" alt="Клиент 4" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./img/logo5.svg" alt="Клиент 5" /></a>
           </li>
-          <li>
+          <li class="item">
             <a href="#"><img src="./img/logo6.svg" alt="Клиент 6" /></a>
           </li>
         </ul>
       </section>
     </main>
     <!-- подвал    -->
-    <footer>
-      <address class="fotter-addres">
+    <footer class="container">
+      <div class="fotter-main">
+        <address class="fotter-addres">
         <a href="./index.html" class="fotter-logo">
           <span class="logo-blue">Web</span> Studio</a
         >
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <ul>
+        <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
+        <ul class="footer-mail">
           <li>
             <a href="mailto:info@devstudio.com" class="fotter-contacts">
               info@devstudio.com</a
@@ -313,8 +322,9 @@
         </ul>
       </address>
 
-      <p class="join">присоединяйтесь</p>
-      <ul>
+     <div class="footer-join">
+        <p class="join">присоединяйтесь</p>
+      <ul class="command-link footer-social">
         <li>
           <a href="#">
             <img src="./img/instagram.svg" alt="Инстаграмм" class="social-link"
@@ -336,6 +346,9 @@
           /></a>
         </li>
       </ul>
+     </div>
+     <p class="join">Подпишитесь на рассылку</p>
+      </div>
     </footer>
   </body>
 </html>
