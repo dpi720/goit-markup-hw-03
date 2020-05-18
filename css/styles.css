@@ -8,7 +8,7 @@ body {
   background: #e5e5e5;
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
-  font-style: 400;
+  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -128,7 +128,7 @@ h2 {
   margin-bottom: 0px;
 }
 .downspace {
-  padding-top: 94;
+  margin-top: 94;
   padding-bottom: 94px;
   padding-left: 0px;
   padding-right: 0px;
@@ -140,8 +140,6 @@ h2 {
   display: flex;
   align-content: center;
   padding-left: 0px;
-  padding-left: auto;
-  padding-right: auto;
 }
 .grup-block .item + .item {
   margin-left: 30px;
@@ -183,6 +181,8 @@ h2 {
 .command-link {
   display: flex;
   padding: 0px;
+
+  align-content: center;
 }
 .comand-name {
   font-weight: 500;
