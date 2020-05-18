@@ -17,30 +17,34 @@
   <body>
     <!-- шапка-->
     <header>
-      <div class="container">
-        <nav>
+      <div class="container mainmenu">
+        <nav class="topmenu" >
           <a href="./index.html" class="logo">
             <span class="logo-blue">Web</span> Studio</a
           >
-          <ul class="navigatoin">
-            <li><a href="./index.html" class="navigatoin-link">Студия</a></li>
-            <li>
-              <a href="./portfolio.html" class="navigatoin-link">Портфолио </a>
+          <ul class="navigatoin clermargin">
+            <li class="item">
+              <a href="./index.html" class="navigatoin-link">Студия</a>
             </li>
+            <li class="item">
+              <a href="./portfolio.html" class="navigatoin-link">Портфолио </a>
+            </li class="item">
             <li><a href="#" class="navigatoin-link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="clermargin">
-          <li>
+        <ul class="clermargin connect">
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="contacts-link">
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="contacts-link"
-              >+38 096 111 11 11</a>
-        </li>
-      </ul>
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="portfolio container downspace">
@@ -107,13 +111,14 @@
       </section>
     </main>
     <!-- подвал    -->
-    <footer>
-      <address class="fotter-addres">
+  <footer >
+      <div class="fotter-main container">
+        <address class="fotter-addres">
         <a href="./index.html" class="fotter-logo">
           <span class="logo-blue">Web</span> Studio</a
         >
-        <p>г. Киев, пр-т Леси Украинки, 26</p>
-        <ul>
+        <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
+        <ul class="footer-mail">
           <li>
             <a href="mailto:info@devstudio.com" class="fotter-contacts">
               info@devstudio.com</a
@@ -127,8 +132,9 @@
         </ul>
       </address>
 
-      <p class="join">присоединяйтесь</p>
-      <ul>
+     <div>
+        <p class="join">присоединяйтесь</p>
+      <ul class="command-link footer-social">
         <li>
           <a href="#">
             <img src="./img/instagram.svg" alt="Инстаграмм" class="social-link"
@@ -150,6 +156,9 @@
           /></a>
         </li>
       </ul>
+     </div>
+     <p class="join">Подпишитесь на рассылку</p>
+      </div>
     </footer>
   </body>
 </html>
